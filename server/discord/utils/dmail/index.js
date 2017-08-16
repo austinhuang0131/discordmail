@@ -7,7 +7,7 @@ const check = id =>
 			.get(id)
 			.run(r.conn, (err1, res) => {
 				if (err1) {
-					reject('Could not search RethonkDB');
+					reject('Could not search RethinkDB');
 				} else if (!res) {
 					reject(`You or the guild are not registered! Use \`dmail register\` after referring to the Terms of Service on ${config.get('api').mailgun.domain}`);
 				} else {
