@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server/"
+    "start": "node server/",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -34,6 +36,8 @@
     "mustache": "^2.3.0",
     "request": "^2.81.0",
     "rethinkdb": "^2.3.3",
-    "rethinkdb-init": "^0.2.2"
-  }
+    "rethinkdb-init": "^0.2.2",
+    "snyk": "^1.126.0"
+  },
+  "snyk": true
 }
